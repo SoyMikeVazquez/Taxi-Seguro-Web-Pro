@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejeturmex | Transporte Ejecutivo Seguro y Puntual al Aeropuerto de Monterrey</title>
+    <meta name="description"
+        content="Servicio de transporte ejecutivo y taxi al aeropuerto de Monterrey. Unidades seguras y sanitizadas. Reserva ahora.">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/logo.png" alt="Ejeturmex Logo">
+                </a>
+            </div>
+            <div class="mobile-menu-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="aeropuerto-monterrey.html">Aeropuerto de Monterrey</a></li>
+                    <li><a href="traslado-foraneo.html">Traslado foráneo</a></li>
+                    <li><a href="servicios.html">Servicios</a></li>
+                    <li><a href="nosotros.html">Nosotros</a></li>
+                    <li><a href="facturacion.html">Facturación</a></li>
+                    <li><a href="reservar.html" class="reserve-btn-nav">Reservar</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container hero-content">
+            <h1>Transporte Ejecutivo Seguro y Puntual al Aeropuerto de Monterrey</h1>
+            <p>Disfruta tu viaje con total confianza en unidades siempre limpias y sanitizadas conducidas por choferes
+                con +10 años de experiencia.</p>
+            <div class="hero-buttons">
+                <a href="tel:8124244334" class="btn btn-primary">Llámanos: 81 24 24 43 34</a>
+                <a href="https://api.whatsapp.com/send?phone=5218124244334" class="btn btn-accent"
+                    target="_blank">WhatsApp</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trust Bar (Marcas) -->
+    <section class="trust-bar">
+        <div class="swiper trust-swiper">
+            <div class="swiper-wrapper">
+                <!-- Logos will be duplicated via JS for infinite loop or just manually repeated here -->
+                <div class="swiper-slide"><img src="images/logos/bbva.png" alt="BBVA"></div>
+                <div class="swiper-slide"><img src="images/logos/cemex.png" alt="Cemex"></div>
+                <div class="swiper-slide"><img src="images/logos/telmex.png" alt="Telmex"></div>
+                <!-- Repeating for effect until we have more logos -->
+                <div class="swiper-slide"><img src="images/logos/bbva.png" alt="BBVA"></div>
+                <div class="swiper-slide"><img src="images/logos/cemex.png" alt="Cemex"></div>
+                <div class="swiper-slide"><img src="images/logos/telmex.png" alt="Telmex"></div>
+                <div class="swiper-slide"><img src="images/logos/bbva.png" alt="BBVA"></div>
+                <div class="swiper-slide"><img src="images/logos/cemex.png" alt="Cemex"></div>
+                <div class="swiper-slide"><img src="images/logos/telmex.png" alt="Telmex"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="why-choose" id="nosotros">
+        <div class="container">
+            <h2>¿Por qué elegir nuestro taxi al aeropuerto de Monterrey?</h2>
+            <div class="features-grid">
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <img src="images/Untitled-design-5-1.png" alt="20 años de experiencia">
+                    </div>
+                    <h3>20 años de experiencia</h3>
+                    <p>Entendemos lo valioso que es tu viaje.</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <img src="images/Iconos-6.png" alt="Puntualidad">
+                    </div>
+                    <h3>Puntualidad</h3>
+                    <p>Nuestro compromiso principal es la puntualidad.</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <img src="images/Untitled-design-3-1.png" alt="Seguridad">
+                    </div>
+                    <h3>Seguridad</h3>
+                    <p>Personal altamente calificado y vehículos en excelente estado.</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <img src="images/Untitled-design-7.png" alt="Unidades sanitizadas">
+                    </div>
+                    <h3>Unidades sanitizadas</h3>
+                    <p>Garantizamos que cada vehículo esté limpio y desinfectado.</p>
+                </div>
+                <!-- Added missing item from source if possible given icon constraint, or mapped 'Confianza' to '20 years' roughly. Source had 5 items, I have 4 slots in grid usually. sticking to 4 visually or adding 5th if grid handles it. Grid is auto-fit. Adding 5th. -->
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <img src="images/Untitled-design-5-1.png" alt="Confianza"> <!-- Reusing icon as placeholder -->
+                    </div>
+                    <h3>Confianza</h3>
+                    <p>Supervisamos cada detalle para que tu vehículo esté preparado y llegue a tiempo.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Fleet Section -->
+    <section class="fleet">
+        <div class="container">
+            <h2>Nuestras unidades ejecutivas</h2>
+            <!-- Fleet Slider -->
+            <div class="swiper fleet-swiper" data-aos="fade-up">
+                <div class="swiper-wrapper">
+                    <!-- Altima 2025 -->
+                    <div class="swiper-slide">
+                        <div class="car-card">
+                            <div class="car-image"><img src="images/Altima-2025.png" alt="Altima 2025"></div>
+                            <h3>Altima 2025</h3>
+                            <ul class="car-specs">
+                                <li>Capacidad de 5 personas</li>
+                                <li>Unidad sanitizada</li>
+                                <li>Mantenimiento realizado y aprobado</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Sentra RT 2025 -->
+                    <div class="swiper-slide">
+                        <div class="car-card">
+                            <div class="car-image"><img src="images/Sentra-RT-2025.png" alt="Sentra RT 2025"></div>
+                            <h3>Sentra RT 2025</h3>
+                            <ul class="car-specs">
+                                <li>Capacidad de 5 personas</li>
+                                <li>Unidad sanitizada</li>
+                                <li>Mantenimiento realizado y aprobado</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Sonata 24 -->
+                    <div class="swiper-slide">
+                        <div class="car-card">
+                            <div class="car-image"><img src="images/Sonata-24.png" alt="Sonata 24"></div>
+                            <h3>Sonata 24</h3>
+                            <ul class="car-specs">
+                                <li>Capacidad de 5 personas</li>
+                                <li>Unidad sanitizada</li>
+                                <li>Mantenimiento realizado y aprobado</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Seltos 25 -->
+                    <div class="swiper-slide">
+                        <div class="car-card">
+                            <div class="car-image"><img src="images/SELTOS-25.png" alt="Seltos 25"></div>
+                            <h3>Seltos 25</h3>
+                            <ul class="car-specs">
+                                <li>Capacidad de 5 personas</li>
+                                <li>Unidad sanitizada</li>
+                                <li>Mantenimiento realizado y aprobado</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Sprinter 24 -->
+                    <div class="swiper-slide">
+                        <div class="car-card">
+                            <div class="car-image"><img src="images/Sprinter-24.png" alt="Sprinter 24"></div>
+                            <h3>Sprinter 24</h3>
+                            <ul class="car-specs">
+                                <li>Capacidad de 15 personas</li>
+                                <li>Unidad sanitizada</li>
+                                <li>Mantenimiento realizado y aprobado</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Hiace 25 -->
+                    <div class="swiper-slide">
+                        <div class="car-card">
+                            <div class="car-image"><img src="images/Hiace-25.png" alt="Hiace 25"></div>
+                            <h3>Hiace 25</h3>
+                            <ul class="car-specs">
+                                <li>Capacidad de 13 personas</li>
+                                <li>Unidad sanitizada</li>
+                                <li>Mantenimiento realizado y aprobado</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Cherokee -->
+                    <div class="swiper-slide">
+                        <div class="car-card">
+                            <div class="car-image"><img src="images/Cherokee.png" alt="Cherokee"></div>
+                            <h3>Cherokee</h3>
+                            <ul class="car-specs">
+                                <li>Capacidad de 5 personas</li>
+                                <li>Unidad sanitizada</li>
+                                <li>Mantenimiento realizado y aprobado</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Kia Sorento -->
+                    <div class="swiper-slide">
+                        <div class="car-card">
+                            <div class="car-image"><img src="images/Kia-sorento.png" alt="Kia Sorento"></div>
+                            <h3>Kia Sorento</h3>
+                            <ul class="car-specs">
+                                <li>Capacidad de 7 personas</li>
+                                <li>Unidad sanitizada</li>
+                                <li>Mantenimiento realizado y aprobado</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Toyota Avanza -->
+                    <div class="swiper-slide">
+                        <div class="car-card">
+                            <div class="car-image"><img src="images/Toyota-avanza.png" alt="Toyota Avanza"></div>
+                            <h3>Toyota Avanza</h3>
+                            <ul class="car-specs">
+                                <li>Capacidad de 7 personas</li>
+                                <li>Unidad sanitizada</li>
+                                <li>Mantenimiento realizado y aprobado</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- MG GT -->
+                    <div class="swiper-slide">
+                        <div class="car-card">
+                            <div class="car-image"><img src="images/MG-GT.png" alt="MG GT"></div>
+                            <h3>MG GT</h3>
+                            <ul class="car-specs">
+                                <li>Capacidad de 5 personas</li>
+                                <li>Unidad sanitizada</li>
+                                <li>Mantenimiento realizado y aprobado</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Suburban -->
+                    <div class="swiper-slide">
+                        <div class="car-card">
+                            <div class="car-image"><img src="images/Suburban.png" alt="Suburban"></div>
+                            <h3>Suburban</h3>
+                            <ul class="car-specs">
+                                <li>Capacidad de 9 personas</li>
+                                <li>Unidad sanitizada</li>
+                                <li>Mantenimiento realizado y aprobado</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- Pagination -->
+                <div class="swiper-pagination"></div>
+            </div>
+            <div style="margin-top: 40px; text-align: center;">
+                <a href="servicios.html" class="btn btn-secondary">Ver todas las unidades</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>Ejeturmex</h4>
+                    <p>Servicio de transporte ejecutivo líder en Monterrey. Seguridad, puntualidad y confort nos
+                        distinguen.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Enlaces Rápidos</h4>
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="nosotros.html">Nosotros</a></li>
+                        <li><a href="servicios.html">Servicios</a></li>
+                        <li><a href="facturacion.html">Facturación</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contacto</h4>
+                    <ul>
+                        <li><a href="tel:8124244334">Tel: 81 24 24 43 34</a></li>
+                        <li><a href="mailto:info@ejeturmex.com">info@ejeturmex.com</a></li>
+                        <li>Monterrey, Nuevo León</li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Síguenos</h4>
+                    <ul> <!-- Using text for now as icons might not be downloaded or font awesome not linked -->
+                        <li><a href="https://facebook.com">Facebook</a></li>
+                        <li><a href="https://instagram.com">Instagram</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 Ejeturmex S.A. de C.V. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

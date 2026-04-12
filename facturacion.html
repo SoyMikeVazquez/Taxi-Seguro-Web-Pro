@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facturación | Ejeturmex</title>
+    <meta name="description" content="Solicita la factura de tu servicio de transporte de manera rápida y sencilla.">
+    <link rel="stylesheet" href="css/style.css">
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/logo.png" alt="Ejeturmex Logo">
+                </a>
+            </div>
+            <div class="mobile-menu-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="aeropuerto-monterrey.html">Aeropuerto de Monterrey</a></li>
+                    <li><a href="traslado-foraneo.html">Traslado foráneo</a></li>
+                    <li><a href="servicios.html">Servicios</a></li>
+                    <li><a href="nosotros.html">Nosotros</a></li>
+                    <li><a href="facturacion.html">Facturación</a></li>
+                    <li><a href="reservar.html" class="reserve-btn-nav">Reservar</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header" style="background-image: url('images/Untitled-design-3-1.png');">
+        <div class="container page-header-content">
+            <h1>Facturación</h1>
+        </div>
+    </section>
+
+    <!-- Form Section -->
+    <section class="pricing-section" style="background-color: var(--bg-light);">
+        <div class="container">
+            <div class="invoice-form-container">
+                <div style="text-align: center; margin-bottom: 30px;">
+                    <h2>Solicitud de Factura</h2>
+                    <p>Completa el formulario con tus datos fiscales y la información de tu servicio para generar tu
+                        factura.</p>
+                </div>
+
+                <form action="#" method="POST">
+                    <h3>Datos Fiscales</h3>
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+                        <div class="form-group">
+                            <label for="razon_social">Nombre o Razón Social</label>
+                            <input type="text" id="razon_social" name="razon_social" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="rfc">RFC</label>
+                            <input type="text" id="rfc" name="rfc" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="direccion">Dirección Fiscal Completa (Calle, Num, Col, CP, Ciudad)</label>
+                        <input type="text" id="direccion" name="direccion" required>
+                    </div>
+
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+                        <div class="form-group">
+                            <label for="regimen">Régimen Fiscal</label>
+                            <select id="regimen" name="regimen">
+                                <option value="">Selecciona tu régimen</option>
+                                <option value="601">General de Ley Personas Morales</option>
+                                <option value="612">Personas Físicas con Actividades Empresariales</option>
+                                <option value="603">Personas Morales con Fines no Lucrativos</option>
+                                <option value="605">Sueldos y Salarios e Ingresos Asimilados a Salarios</option>
+                                <option value="626">Régimen Simplificado de Confianza</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="cfdi">Uso de CFDI</label>
+                            <select id="cfdi" name="cfdi">
+                                <option value="G03">Gastos en general</option>
+                                <option value="P01">Por definir</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <h3 style="margin-top: 30px;">Datos del Servicio</h3>
+                    <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 20px;">
+                        <div class="form-group">
+                            <label for="fecha">Fecha del servicio</label>
+                            <input type="date" id="fecha" name="fecha" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="monto">Monto (MXN)</label>
+                            <input type="number" id="monto" name="monto" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="pago">Forma de Pago</label>
+                            <select id="pago" name="pago">
+                                <option value="Efectivo">Efectivo</option>
+                                <option value="Tarjeta">Tarjeta de Crédito/Débito</option>
+                                <option value="Transferencia">Transferencia</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="ticket">Adjuntar Ticket/Comprobante (Imagen o PDF)</label>
+                        <input type="file" id="ticket" name="ticket" accept="image/*,.pdf">
+                    </div>
+
+                    <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 20px;">Solicitar
+                        Factura</button>
+                </form>
+
+                <div style="margin-top: 30px; text-align: center;">
+                    <p>¿Tienes dudas con tu facturación?</p>
+                    <a href="https://api.whatsapp.com/send?phone=5218124244334"
+                        style="color: var(--secondary-color); font-weight: 500;">Contáctanos por WhatsApp</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>Ejeturmex</h4>
+                    <p>Servicio de transporte ejecutivo líder en Monterrey. Seguridad, puntualidad y confort nos
+                        distinguen.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Enlaces Rápidos</h4>
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="nosotros.html">Nosotros</a></li>
+                        <li><a href="servicios.html">Servicios</a></li>
+                        <li><a href="facturacion.html">Facturación</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contacto</h4>
+                    <ul>
+                        <li><a href="tel:8124244334">Tel: 81 24 24 43 34</a></li>
+                        <li><a href="mailto:info@ejeturmex.com">info@ejeturmex.com</a></li>
+                        <li>Monterrey, Nuevo León</li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Síguenos</h4>
+                    <ul>
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">Instagram</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 Ejeturmex S.A. de C.V. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+
+</html>
