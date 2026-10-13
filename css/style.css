@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap');
 
 :root {
-    --primary-color: #0F3354;
+    --primary-color: #CC4E00;
     --secondary-color: #B5892C;
     /* Gold */
     --accent-color: #921212;
@@ -80,7 +80,7 @@ img {
 }
 
 .btn-secondary:hover {
-    background-color: #0c2842;
+    background-color: #a63f00;
 }
 
 .btn-accent {
@@ -102,7 +102,7 @@ header {
 }
 
 header.scrolled {
-    background-color: rgba(15, 51, 84, 0.95);
+    background-color: rgba(204, 78, 0, 0.95);
     padding: 10px 0;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
@@ -154,7 +154,7 @@ nav ul li a:hover {
 /* Hero Section */
 .hero {
     height: 100vh;
-    background-image: linear-gradient(rgba(15, 51, 84, 0.6), rgba(15, 51, 84, 0.6)), url('../images/mapa_zonas_taxi_ejecutivo-1030x568-1.jpg');
+    background-image: linear-gradient(rgba(45, 18, 0, 0.65), rgba(45, 18, 0, 0.65)), url('../images/mapa_zonas_taxi_ejecutivo-1030x568-1.jpg');
     /* Verify proper bg image */
     background-size: cover;
     background-position: center;
@@ -165,7 +165,7 @@ nav ul li a:hover {
     margin-top: -80px;
     /* Overlap header space */
     padding-top: 80px;
-    background-image: linear-gradient(rgba(15, 51, 84, 0.7), rgba(15, 51, 84, 0.7)), url('../images/hero-bg.png');
+    background-image: linear-gradient(rgba(45, 18, 0, 0.75), rgba(45, 18, 0, 0.75)), url('../images/chofer.jpg');
     background-attachment: fixed;
     /* Parallax effect */
 }
@@ -455,7 +455,7 @@ nav ul li a:hover {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(15, 51, 84, 0.7);
+    background: rgba(45, 18, 0, 0.75);
 }
 
 .page-header-content {
@@ -589,7 +589,7 @@ footer {
 
 /* Hero Section Update */
 .hero {
-    background-image: linear-gradient(rgba(15, 51, 84, 0.7), rgba(15, 51, 84, 0.7)), url('../images/hero-bg.png') !important;
+    background-image: linear-gradient(rgba(45, 18, 0, 0.75), rgba(45, 18, 0, 0.75)), url('../images/chofer.jpg') !important;
     background-attachment: fixed;
 }
 
