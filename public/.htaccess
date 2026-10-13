@@ -1,0 +1,26 @@
+# Set Error Document (The Skater page killer)
+ErrorDocument 404 /404.html
+
+# Enable Rewrite Engine
+RewriteEngine On
+RewriteBase /
+
+# 1. Redirect invalid dashboard subpaths to /login
+# This handles https://ejeturmex.com/dashboard/something_random
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^dashboard/(.*)$ /login [R=302,L]
+
+# 2. Redirect EVERYTHING ELSE that doesn't exist to /
+# This handles the "ejeturcom solo" case: https://ejeturmex.com/something_random
+# EXCEPT dashboard which we handled above
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_URI} !^/404.html$
+RewriteCond %{REQUEST_URI} !^/dashboard
+RewriteRule ^(.*)$ / [R=302,L]
+
+# Clean URLs mapping (for static export with trailingSlash)
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME}.html -f
+RewriteRule ^(.*)$ $1.html [L]
