@@ -107,7 +107,7 @@ export default function Footer() {
                             <h5 className="font-semibold text-xs uppercase tracking-wider text-neutral-400 mb-3">Síguenos</h5>
                             <div className="flex gap-2.5">
                                 <a
-                                     href="https://www.facebook.com/taxiejecutivoseguro1"
+                                     href="https://www.facebook.com/TaxiSeguroOficial"
                                      target="_blank"
                                      rel="noopener noreferrer"
                                      aria-label="Facebook"
